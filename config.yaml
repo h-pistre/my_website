@@ -81,10 +81,10 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: projects/project1_image.png"
+      - image: pic01.jpg
         subtitle: Alcohol consumption, CPI evolution and German election polls
         title: Data wrangling
-        url: blogs/project1
+        url: blogs/test
       - image: pic02.jpg
         subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
         title: Data tidying
