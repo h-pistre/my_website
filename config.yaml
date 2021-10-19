@@ -86,8 +86,8 @@ params:
         title: About me
         url: projects/love_on_the_beat
       - image: pic23.jpg
-        subtitle: Comparison of the yield curves for US treasuries since 1960
-        title: Yield curves comparison
+        subtitle: Study of the yield curves for US treasuries since 1960
+        title: Yield curve inversion
         url: blogs/ipsum
       - image: pic22.jpg
         subtitle: Breakdown and analysis of the GDPs of major economies
@@ -96,7 +96,7 @@ params:
       - image: pic21.jpg
         subtitle: Synthesis of election polls for the 2021 German election
         title: Scatterplot of election polls
-        url: projects/project_3
+        url: blogs/project_3
       - image: pic25.jpg
         subtitle: Study of the price of AirBnB accomodations in the city of Syndey
         title: AirBnB prices study

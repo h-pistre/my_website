@@ -8,7 +8,7 @@ draft: false
 image: pic21.jpg # save picture in \static\img\blogs. Acceptable formats= jpg, jpeg, or png . Your iPhone pics wont work
 
 keywords: ""
-slug: project_1 # slug is the shorthand URL address... no spaces plz
+slug: project_3 # slug is the shorthand URL address... no spaces plz
 title: Scatterplot of election polls
 ---
 
@@ -134,6 +134,6 @@ theme(axis.title.y = element_text(size = 12, angle = 90)) +
   NULL
 ```
 
-**Final output**
+**Conclusion**
 
 We obtained the synthesis of opinion polls for the 2021 German election. As the polls predicted, Olaf Scholz' SPD and Armin Laschet's CDU were very close, and the SPD won by a small margin.
