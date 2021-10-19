@@ -82,20 +82,20 @@ params:
     enable: yes
     showcase:
       - image: pic01.jpg
-        subtitle: Ipsum Dolor Sit Amet
+        subtitle: Alcohol consumption, CPI evolution and German election polls
         title: Project 1: Data wrangling
         url: projects/project1
       - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
+        subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
         title: Project 2: Data tidying
         url: projects/project2
       - image: pic03.jpg
-        subtitle: Lorem Etiam Nullam
-        title: Magna
+        subtitle: Health study, yield curves and GDP analysis
+        title: Project 3: Data transformation
         url: projects/project3
       - image: pic04.jpg
-        subtitle: Nisl Sed Aliquam
-        title: Ipsum
+        subtitle: Analysis of AirBnB prices in the city of Sydney
+        title: Final project: AirBnB study
         url: projects/project4
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
@@ -108,11 +108,6 @@ params:
   two:
     buttonText: Get Started
     enable: yes
-    subtitle: "Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
-      \n    Mauris aliquet magna magna sed nunc rhoncus pharetra. \n    Pellentesque
-      condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia
-      pellentesque lorem ipsum dolor. \n    Nullam et orci eu lorem consequat tincidunt.
-      Vivamus et sagittis libero.\n    Mauris aliquet magna magna sed nunc rhoncus
-      amet pharetra et feugiat tempus."
+    subtitle: "Hello, I am Hadrien! I come from Paris, France, where I did most of my education, as well as my undergraduate studies in economics. Afterwards, I did a Masters in Management in Bordeaux, and was involved in my school’s student-led consultancy. After some internships in financial controlling and audit, I decided to join the MFA to further my knowledge in finance. I like music, especially funk, soul, and jazz. I also do a lot of sport and like very much physical exercise. Finally, I enjoy reading about politics and economics. Do not hesitate to reach out!"
     title: Massa libero
     url: blogs
