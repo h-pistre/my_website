@@ -16,7 +16,7 @@ params:
     address:
       - city: London, NW1 4SA
         country: United Kingdom
-        street: Sussex Place
+        street: London Business School\nSussex Place
         title: Address
     buttonClear: Clear
     buttonSend: Send message
@@ -83,20 +83,20 @@ params:
     showcase:
       - image: pic01.jpg
         subtitle: Ipsum Dolor Sit Amet
-        title: Aliquam
-        url: blogs/aliquam
+        title: Project 1: Data wrangling
+        url: projects/project1
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
-        title: Tempus
-        url: blogs/tempus
+        title: Project 2: Data tidying
+        url: projects/project2
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
-        url: blogs/magna
+        url: projects/project3
       - image: pic04.jpg
         subtitle: Nisl Sed Aliquam
         title: Ipsum
-        url: blogs/ipsum
+        url: projects/project4
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
         title: Consequat
