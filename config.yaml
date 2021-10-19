@@ -100,7 +100,7 @@ params:
       - image: pic_project_4.jpg
         subtitle: Study of the price of AirBnB accomodations in the city of Syndey
         title: AirBnB prices study
-        url: blogs/project_4
+        url: blogs/project_4b
       - image: pic_project_5.jpg
         subtitle: Analysis of the returns of stocks traded on the New York Stock Exchange
         title: Returns of financial stocks analysis
@@ -109,5 +109,5 @@ params:
     buttonText: Get Started
     enable: yes
     subtitle: "Hello, I am Hadrien! I come from Paris, France, where I did most of my education, as well as my undergraduate studies in economics. Afterwards, I did a Masters in Management in Bordeaux, and was involved in my school’s student-led consultancy. After some internships in financial controlling and audit, I decided to join the MFA to further my knowledge in finance. I like music, especially funk, soul, and jazz. I also do a lot of sport and like very much physical exercise. Finally, I enjoy reading about politics and economics. Do not hesitate to reach out!"
-    title: Massa libero
+    title: Welcome on my website!
     url: blogs
