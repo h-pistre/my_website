@@ -1,8 +1,14 @@
 ---
-date: "2017-10-31T22:27:21-05:00"
+categories:
+- ""
+- ""
+date: "2017-10-31T21:28:43-05:00"
+description: ""
 draft: false
-image: pic02.jpg
-slug: blogs
+image: pic10.jpg
+keywords: ""
+slug: test
 title: test
 ---
-Hello, this is a test.
+
+Harley, David...
