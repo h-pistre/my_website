@@ -81,27 +81,27 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic20.jpg
+      - image: pic_lbs.jpg
         subtitle: What has been my journey so far
         title: About me
         url: projects/love_on_the_beat
-      - image: pic23.jpg
+      - image: pic_project_1.jpg
         subtitle: Study of the yield curves for US treasuries since 1960
         title: Yield curve inversion
-        url: blogs/ipsum
-      - image: pic22.jpg
+        url: blogs/project_1
+      - image: pic_project_2.jpg
         subtitle: Breakdown and analysis of the GDPs of major economies
-        title: GDP analysis
-        url: blogs/ipsum
-      - image: pic21.jpg
+        title: GDP components analysis
+        url: blogs/project_2
+      - image: pic_project_3.jpg
         subtitle: Synthesis of election polls for the 2021 German election
         title: Scatterplot of election polls
         url: blogs/project_3
-      - image: pic25.jpg
+      - image: pic_project_4.jpg
         subtitle: Study of the price of AirBnB accomodations in the city of Syndey
         title: AirBnB prices study
-        url: blogs/ipsum
-      - image: pic24.jpg
+        url: blogs/project_4
+      - image: pic_project_5.jpg
         subtitle: Analysis of the evolution of the Consumer Price Index over time
         title: CPI evolution
         url: blogs/ipsum
