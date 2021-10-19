@@ -12,6 +12,46 @@ slug: project_1 # slug is the shorthand URL address... no spaces plz
 title: Project_1
 ---
 
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggrepel)
+library(reshape2)
+library(readxl)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+library(ggthemes)
+library(lubridate)
+library(fivethirtyeight)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(rvest) # to scrape wikipedia page
+```
+
+
+
 # Challenge 2: Opinion polls for the 2021 German elections
 
 The Guardian newspaper has an [election poll tracker for the upcoming German election](https://www.theguardian.com/world/2021/aug/20/german-election-poll-tracker-who-will-be-the-next-chancellor). The list of the opinion polls since Jan 2021 can be found at [Wikipedia](https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_German_federal_election) and we will reproduce a graph similar to the one produced by the Guardian using the data from the wikipedia page . 
@@ -61,9 +101,6 @@ german_election_polls <- polls[[1]] %>% # the first table on the page contains t
          week = isoweek(end_date)
          )
 ```
-
-
-
 
 **Building Chart**
 
