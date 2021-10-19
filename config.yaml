@@ -84,11 +84,11 @@ params:
       - image: projects/project1_image.png"
         subtitle: Alcohol consumption, CPI evolution and German election polls
         title: Data wrangling
-        url: projects/project1
+        url: blogs/project1
       - image: pic02.jpg
         subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
         title: Data tidying
-        url: projects/project2
+        url: blogs/project2
       - image: pic03.jpg
         subtitle: Health study, yield curves and GDP analysis
         title: Data transformation
