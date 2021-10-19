@@ -12,6 +12,90 @@ slug: project_1 # slug is the shorthand URL address... no spaces plz
 title: Project_1
 ---
 
-Title
+# Challenge 2: Opinion polls for the 2021 German elections
 
-Project 1
+The Guardian newspaper has an [election poll tracker for the upcoming German election](https://www.theguardian.com/world/2021/aug/20/german-election-poll-tracker-who-will-be-the-next-chancellor). The list of the opinion polls since Jan 2021 can be found at [Wikipedia](https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_German_federal_election) and we will reproduce a graph similar to the one produced by the Guardian using the data from the wikipedia page . 
+
+
+
+
+**Scraping Wikipedia page**
+
+First, we scrape the wikipedia page and import the table in a dataframe.
+
+
+```{r scrape_wikipedia_polling_data, warnings= FALSE, message=FALSE, cache=TRUE}
+url <- "https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_German_federal_election"
+
+# similar graphs and analyses can be found at 
+# https://www.theguardian.com/world/2021/jun/21/german-election-poll-tracker-who-will-be-the-next-chancellor
+# https://www.economist.com/graphic-detail/who-will-succeed-angela-merkel
+
+
+# get tables that exist on wikipedia page 
+tables <- url %>% 
+  read_html() %>% 
+  html_nodes(css="table")
+
+
+# parse HTML tables into a dataframe called polls 
+# Use purr::map() to create a list of all tables in URL
+polls <- map(tables, . %>% 
+             html_table(fill=TRUE)%>% 
+             janitor::clean_names())
+
+
+# list of opinion polls
+german_election_polls <- polls[[1]] %>% # the first table on the page contains the list of all opinions polls
+  slice(2:(n()-1)) %>%  # drop the first row, as it contains again the variable names and last row that contains 2017 results
+  mutate(
+         # polls are shown to run from-to, e.g. 9-13 Aug 2021. We keep the last date, 13 Aug here, as the poll date
+         # and we extract it by picking the last 11 characters from that field
+         end_date = str_sub(fieldwork_date, -11),
+         
+         # end_date is still a string, so we convert it into a date object using lubridate::dmy()
+         end_date = dmy(end_date),
+         
+         # we also get the month and week number from the date, if we want to do analysis by month- week, etc.
+         month = month(end_date),
+         week = isoweek(end_date)
+         )
+```
+
+
+
+
+**Building Chart**
+
+Then we reproduce the chart with the new data.
+
+```{r making_challenge_2_plot, warnings= FALSE, message=FALSE, cache=TRUE}
+library(plotly)
+#To be able to plot all the German parties' polling scores on the y axis by date, we need to rework our data set so as to have the date as a function of all the parties' polling score. To to this, we first have to define variables for each party' polling score.
+SPD <- german_election_polls$spd
+Union <- german_election_polls$union
+AfD <- german_election_polls$af_d
+FDP <- german_election_polls$fdp
+Linke <- german_election_polls$linke
+Grune <- german_election_polls$grune
+day <- german_election_polls$end_date
+
+df1 <- data.frame(SPD, Union, AfD, FDP, Linke, Grune, day) #We create a new data frame to which we assign all the variables we created.
+df2 <- melt(df1, id.vars='day') #Then, we melt all the parties' polling scores and keep the date as the other variable.
+head(df2)
+
+ggplot(df2,aes(x = day, y = value, colour = variable)) + #We plot the days and the parties' polling scores. We colour the parties to be able to differentiate them.
+  geom_point(shape=1) + #We make the points hollow to be able to better see the rolling average we'll create.
+  geom_ma(spd_MA= SMA, n=14, linetype = 1, size=1) + #We create a 14-day rolling average following the Guardian's methodology. We change the linetype to a solid one so that it is more easily readable.
+theme_bw()+
+labs(
+  title = "Polling scores for the German election",
+  x = "Day (2021)",
+  y = "German parties' polling scores",
+)+
+#Finally, we format the main title, the axes' titles and the axes' text to make the chart more easily readable.
+theme(plot.title = element_text(size = 14, face = "bold")) +
+theme(axis.title.x = element_text(size = 12, angle = 0)) +
+theme(axis.title.y = element_text(size = 12, angle = 90)) +
+  NULL
+```
