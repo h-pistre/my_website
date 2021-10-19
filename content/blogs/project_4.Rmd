@@ -753,4 +753,4 @@ predict_price
 
 **Conclusion**
 
-dd
+We highlighted the different factors that affect the price of AirBnB accomodations in the city of Sydney.

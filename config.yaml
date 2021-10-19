@@ -102,9 +102,9 @@ params:
         title: AirBnB prices study
         url: blogs/project_4
       - image: pic_project_5.jpg
-        subtitle: Analysis of the evolution of the Consumer Price Index over time
-        title: CPI evolution
-        url: blogs/ipsum
+        subtitle: Analysis of the returns of stocks traded on the New York Stock Exchange
+        title: Returns of financial stocks analysis
+        url: blogs/project_5
   two:
     buttonText: Get Started
     enable: yes
