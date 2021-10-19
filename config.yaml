@@ -83,19 +83,19 @@ params:
     showcase:
       - image: pic01.jpg
         subtitle: Alcohol consumption, CPI evolution and German election polls
-        title: Project 1: Data wrangling
+        title: Data wrangling
         url: projects/project1
       - image: pic02.jpg
         subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
-        title: Project 2: Data tidying
+        title: Data tidying
         url: projects/project2
       - image: pic03.jpg
         subtitle: Health study, yield curves and GDP analysis
-        title: Project 3: Data transformation
+        title: Data transformation
         url: projects/project3
       - image: pic04.jpg
         subtitle: Analysis of AirBnB prices in the city of Sydney
-        title: Final project: AirBnB study
+        title: AirBnB study
         url: projects/project4
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
