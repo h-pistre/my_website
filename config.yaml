@@ -16,7 +16,7 @@ params:
     address:
       - city: London, NW1 4SA
         country: United Kingdom
-        street: London Business School\nSussex Place
+        street: London Business School, Sussex Place
         title: Address
     buttonClear: Clear
     buttonSend: Send message
@@ -81,10 +81,10 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic01.jpg
-        subtitle: Alcohol consumption, CPI evolution and German election polls
-        title: Data wrangling
-        url: projects/project1
+      - image: "projects/project1_image.png""
+        subtitle: "Alcohol consumption, CPI evolution and German election polls""
+        title: "Data wrangling""
+        url: "projects/project1""
       - image: pic02.jpg
         subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
         title: Data tidying
