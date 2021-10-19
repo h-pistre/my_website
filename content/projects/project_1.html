@@ -1,0 +1,95 @@
+---
+categories:  
+- ""    #the front matter should be like the one found in, e.g., blog2.md. It cannot be like the normal Rmd we used
+- ""
+date: "2021-09-30"
+description: Project_1 # the title that will show up once someone gets to this page
+draft: false
+image: pic.21 # save picture in \static\img\blogs. Acceptable formats= jpg, jpeg, or png . Your iPhone pics wont work
+
+keywords: ""
+slug: project_1 # slug is the shorthand URL address... no spaces plz
+title: Project_1
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="challenge-2-opinion-polls-for-the-2021-german-elections" class="section level1">
+<h1>Challenge 2: Opinion polls for the 2021 German elections</h1>
+<p>The Guardian newspaper has an <a href="https://www.theguardian.com/world/2021/aug/20/german-election-poll-tracker-who-will-be-the-next-chancellor">election poll tracker for the upcoming German election</a>. The list of the opinion polls since Jan 2021 can be found at <a href="https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_German_federal_election">Wikipedia</a> and we will reproduce a graph similar to the one produced by the Guardian using the data from the wikipedia page .</p>
+<p><strong>Scraping Wikipedia page</strong></p>
+<p>First, we scrape the wikipedia page and import the table in a dataframe.</p>
+<pre class="r"><code>url &lt;- &quot;https://en.wikipedia.org/wiki/Opinion_polling_for_the_2021_German_federal_election&quot;
+
+# similar graphs and analyses can be found at 
+# https://www.theguardian.com/world/2021/jun/21/german-election-poll-tracker-who-will-be-the-next-chancellor
+# https://www.economist.com/graphic-detail/who-will-succeed-angela-merkel
+
+
+# get tables that exist on wikipedia page 
+tables &lt;- url %&gt;% 
+  read_html() %&gt;% 
+  html_nodes(css=&quot;table&quot;)
+
+
+# parse HTML tables into a dataframe called polls 
+# Use purr::map() to create a list of all tables in URL
+polls &lt;- map(tables, . %&gt;% 
+             html_table(fill=TRUE)%&gt;% 
+             janitor::clean_names())
+
+
+# list of opinion polls
+german_election_polls &lt;- polls[[1]] %&gt;% # the first table on the page contains the list of all opinions polls
+  slice(2:(n()-1)) %&gt;%  # drop the first row, as it contains again the variable names and last row that contains 2017 results
+  mutate(
+         # polls are shown to run from-to, e.g. 9-13 Aug 2021. We keep the last date, 13 Aug here, as the poll date
+         # and we extract it by picking the last 11 characters from that field
+         end_date = str_sub(fieldwork_date, -11),
+         
+         # end_date is still a string, so we convert it into a date object using lubridate::dmy()
+         end_date = dmy(end_date),
+         
+         # we also get the month and week number from the date, if we want to do analysis by month- week, etc.
+         month = month(end_date),
+         week = isoweek(end_date)
+         )</code></pre>
+<p><strong>Building Chart</strong></p>
+<p>Then we reproduce the chart with the new data.</p>
+<pre class="r"><code>library(plotly)
+#To be able to plot all the German parties&#39; polling scores on the y axis by date, we need to rework our data set so as to have the date as a function of all the parties&#39; polling score. To to this, we first have to define variables for each party&#39; polling score.
+SPD &lt;- german_election_polls$spd
+Union &lt;- german_election_polls$union
+AfD &lt;- german_election_polls$af_d
+FDP &lt;- german_election_polls$fdp
+Linke &lt;- german_election_polls$linke
+Grune &lt;- german_election_polls$grune
+day &lt;- german_election_polls$end_date
+
+df1 &lt;- data.frame(SPD, Union, AfD, FDP, Linke, Grune, day) #We create a new data frame to which we assign all the variables we created.
+df2 &lt;- melt(df1, id.vars=&#39;day&#39;) #Then, we melt all the parties&#39; polling scores and keep the date as the other variable.
+head(df2)</code></pre>
+<pre><code>##          day variable value
+## 1 2021-09-26      SPD  25.7
+## 2 2021-09-24      SPD  25.5
+## 3 2021-09-23      SPD  26.0
+## 4 2021-09-23      SPD  25.0
+## 5 2021-09-23      SPD  25.0
+## 6 2021-09-23      SPD  26.0</code></pre>
+<pre class="r"><code>ggplot(df2,aes(x = day, y = value, colour = variable)) + #We plot the days and the parties&#39; polling scores. We colour the parties to be able to differentiate them.
+  geom_point(shape=1) + #We make the points hollow to be able to better see the rolling average we&#39;ll create.
+  geom_ma(spd_MA= SMA, n=14, linetype = 1, size=1) + #We create a 14-day rolling average following the Guardian&#39;s methodology. We change the linetype to a solid one so that it is more easily readable.
+theme_bw()+
+labs(
+  title = &quot;Polling scores for the German election&quot;,
+  x = &quot;Day (2021)&quot;,
+  y = &quot;German parties&#39; polling scores&quot;,
+)+
+#Finally, we format the main title, the axes&#39; titles and the axes&#39; text to make the chart more easily readable.
+theme(plot.title = element_text(size = 14, face = &quot;bold&quot;)) +
+theme(axis.title.x = element_text(size = 12, angle = 0)) +
+theme(axis.title.y = element_text(size = 12, angle = 90)) +
+  NULL</code></pre>
+<p><img src="/projects/project_1_files/figure-html/making_challenge_2_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+</div>
