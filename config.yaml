@@ -35,7 +35,7 @@ params:
     text: Please visit [this page](/)
   favicon: favicon.ico
   footer:
-    copyright: Hadrien Pistre
+    copyright: Personal website of Hadrien Pistre
     enable: yes
     quicklinks:
       - alt: HTML5 UP
@@ -44,19 +44,19 @@ params:
     social:
       - icon: fa-twitter
         label: Twitter
-        url: https://www.twitter.com
+        url: https://twitter.com/Hadrien_Pst
       - icon: fa-facebook
         label: Facebook
-        url: https://www.facebook.com
+        url: https://www.facebook.com/hadrien.pistre.7/
       - icon: fa-instagram
         label: Instagram
-        url: https://www.instagram.com
+        url: https://www.instagram.com/hpistre/
       - icon: fa-github
         label: GitHub
-        url: https://www.github.com
+        url: https://github.com/h-pistre
       - icon: fa-linkedin
         label: LinkedIn
-        url: https://www.linkedin.com
+        url: https://www.linkedin.com/in/hadrien-pistre/
   image: ''
   name: Your name
   navigation:
