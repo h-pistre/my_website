@@ -84,19 +84,19 @@ params:
       - image: pic01.jpg
         subtitle: Alcohol consumption, CPI evolution and German election polls
         title: Data wrangling
-        url: blogs/test
+        url: blogs/ipsum
       - image: pic02.jpg
         subtitle: Temperatures evolution, Joe Biden approval rating, TfL bikes usage and CPI by component
         title: Data tidying
-        url: blogs/project2
+        url: blogs/ipsum
       - image: pic03.jpg
         subtitle: Health study, yield curves and GDP analysis
         title: Data transformation
-        url: projects/project3
+        url: blogs/ipsum
       - image: pic04.jpg
         subtitle: Analysis of AirBnB prices in the city of Sydney
         title: AirBnB study
-        url: projects/project4
+        url: blogs/ipsum
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
         title: Consequat
