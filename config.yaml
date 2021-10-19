@@ -81,7 +81,7 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic01.jpg
+      - image: pic21.jpg
         subtitle: Alcohol consumption, CPI evolution and German election polls
         title: Data wrangling
         url: projects/love_on_the_beat
