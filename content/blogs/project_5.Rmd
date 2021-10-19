@@ -12,6 +12,42 @@ slug: project_5 # slug is the shorthand URL address... no spaces plz
 title: Returns of financial stocks analysis
 ---
 
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size="small")   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = "center"
+)
+```
+
+```{r load-libraries, warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)  # Load ggplot2, dplyr, and all the other tidyverse packages
+library(mosaic)
+library(ggrepel)
+library(reshape2)
+library(readxl)
+library(dplyr)
+library(kableExtra)
+library(knitr)
+library(ggthemes)
+library(lubridate)
+library(fivethirtyeight)
+library(here)
+library(skimr)
+library(janitor)
+library(vroom)
+library(tidyquant)
+library(rvest) # to scrape wikipedia page
+```
+
 # Returns of financial stocks
 
 We start off by downloading stock data from the New York Stock Exchange:
