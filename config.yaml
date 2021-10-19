@@ -81,29 +81,29 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic21.jpg
-        subtitle: Alcohol consumption, CPI evolution and German election polls
-        title: Data wrangling
+      - image: pic20.jpg
+        subtitle: What has been my journey so far
+        title: About me
         url: projects/love_on_the_beat
+      - image: pic23.jpg
+        subtitle: Comparison of the yield curves for US treasuries since 1960
+        title: Yield curves comparison
+        url: blogs/ipsum
+      - image: pic22.jpg
+        subtitle: Breakdown and analysis of the GDPs of major economies
+        title: GDP analysis
+        url: blogs/ipsum
       - image: pic21.jpg
         subtitle: Synthesis of election polls for the 2021 German election
-        title: Data tidying
-        url: projects/project_1
-      - image: pic03.jpg
-        subtitle: Health study, yield curves and GDP analysis
-        title: Data transformation
+        title: Scatterplot of election polls
+        url: projects/project_3
+      - image: pic25.jpg
+        subtitle: Study of the price of AirBnB accomodations in the city of Syndey
+        title: AirBnB prices study
         url: blogs/ipsum
-      - image: pic04.jpg
-        subtitle: Analysis of AirBnB prices in the city of Sydney
-        title: AirBnB study
-        url: blogs/ipsum
-      - image: pic05.jpg
-        subtitle: Ipsum Dolor Sit Amet
-        title: Consequat
-        url: blogs/ipsum
-      - image: pic06.jpg
-        subtitle: Feugiat Amet Tempus
-        title: Etiam
+      - image: pic24.jpg
+        subtitle: Analysis of the evolution of the Consumer Price Index over time
+        title: CPI evolution
         url: blogs/ipsum
   two:
     buttonText: Get Started
