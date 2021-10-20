@@ -6,7 +6,7 @@ googleAnalytics: ''
 disqusShortname: ''
 params:
   banner:
-    buttonText: Get Started
+    buttonText: Browse content
     subtitle: |-
       A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
       AND RELEASED UNDER THE CREATIVE COMMONS USED BY HADRIEN PISTRE.
@@ -76,8 +76,8 @@ params:
       #- name: Elements
       #  url: elements.html
     menu: Menu
-    subtitle: By HTML5 Up
-    title: Forty
+    subtitle: Portfolio website
+    title: Hadrien Pistre
   tiles:
     enable: yes
     showcase:
@@ -101,13 +101,17 @@ params:
         subtitle: Study of the price of AirBnB accomodations in the city of Syndey
         title: AirBnB prices study
         url: blogs/project_4b
+      - image: blog_3.jpg
+        subtitle: Al Gore interview on "Earth in the Balance"
+        title: YouTube - Interview
+        url: blogs/al_gore
       - image: pic_project_5.jpg
         subtitle: Analysis of the returns of stocks traded on the New York Stock Exchange
         title: Returns of financial stocks analysis
         url: blogs/project_5
   two:
-    buttonText: Get Started
+    buttonText: Go to Blogs
     enable: yes
-    subtitle: "Hello and welcome on my website! Please find some information about myself, as well as a few R projects I have been working on with some of my fellow students."
+    subtitle: "Hello and welcome on my website! Please find some information about me, as well as a few R projects I have been working on with some of my fellow students."
     title: Welcome on my website!
     url: blogs

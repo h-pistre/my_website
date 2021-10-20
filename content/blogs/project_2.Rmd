@@ -12,7 +12,7 @@ slug: project_2 # slug is the shorthand URL address... no spaces plz
 title: GDP components analysis
 ---
 
-# GDP components over time and among countries
+# Breakdown and analysis of the GDPs of major economies
 
 The main components of gross domestic product, GDP are personal consumption (C), business investment (I), government spending (G) and net exports (exports - imports). You can read more about GDP and the different approaches in calculating at the [Wikipedia GDP page](https://en.wikipedia.org/wiki/Gross_domestic_product).
 

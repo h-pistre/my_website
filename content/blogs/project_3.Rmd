@@ -51,7 +51,7 @@ library(rvest) # to scrape wikipedia page
 ```
 
 
-# Opinion polls for the 2021 German elections
+# Synthesis of election polls for the 2021 German election
 
 The goal is to create a chart that synthesizes the opinion polls for the 2021 German election, such as the one [the one](https://www.theguardian.com/world/2021/aug/20/german-election-poll-tracker-who-will-be-the-next-chancellor) created by the Guardian newspaper.
 

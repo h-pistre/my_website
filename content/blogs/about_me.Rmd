@@ -48,7 +48,7 @@ library(tidyquant)
 library(rvest) # to scrape wikipedia page
 ```
 
-# About me
+# What has been my journey so far
 
 **What I did before LBS**
 
@@ -69,5 +69,5 @@ I like music, especially funk, soul, and jazz. I also do a lot of sport and like
 **My resume**
 
 ```{r resume, out.width="100%", cache=TRUE}
-knitr::include_graphics(here::here("data", "HadrienPistre_resume.png"), error = FALSE)
+knitr::include_graphics("/img/HadrienPistre_resume.jpg",error =FALSE)
 ```

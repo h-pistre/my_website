@@ -48,7 +48,7 @@ library(tidyquant)
 library(rvest) # to scrape wikipedia page
 ```
 
-# Returns of financial stocks
+# Analysis of the returns of stocks traded on the New York Stock Exchange
 
 We start off by downloading stock data from the New York Stock Exchange:
 ```{r load_nyse_data, message=FALSE, warning=FALSE, cache=TRUE}
