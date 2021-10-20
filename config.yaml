@@ -109,9 +109,9 @@ params:
         subtitle: Analysis of the returns of stocks traded on the New York Stock Exchange
         title: Returns of financial stocks analysis
         url: blogs/project_5
-      - image: blog_3.jpg
+      - image: blog_2.jpg
         subtitle: Emmanuel Macron lance un vaste plan de reconquête industrielle
-        title: Le Figaro - Article
+        title: Financial Times - Article
         url: https://www.ft.com/content/5da38637-292f-4c2f-ae48-8e0c74b6014c   
   two:
     buttonText: Go to Blogs
