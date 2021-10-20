@@ -112,7 +112,7 @@ params:
       - image: blog_3.jpg
         subtitle: Emmanuel Macron lance un vaste plan de reconquête industrielle
         title: Le Figaro - Article
-        url: blogs/le_fig      
+        url: https://www.ft.com/content/5da38637-292f-4c2f-ae48-8e0c74b6014c   
   two:
     buttonText: Go to Blogs
     enable: yes
