@@ -11,6 +11,6 @@ slug: f_t
 title: Financial Times - Article
 ---
 
-# Financial Times - Evergrande share trading halt pushes HKEX suspensions to record $61bn
+**Financial Times - Evergrande share trading halt pushes HKEX suspensions to record $61bn**
 
 An interesting article from the [Financial Times about the Evergrande scandal](https://www.ft.com/content/b3bb2c37-252b-430d-99dc-bde7b3d2f179).
