@@ -13,4 +13,4 @@ title: Le Figaro - Article
 
 **Le Figaro - Emmanuel Macron lance un vaste plan de reconquête industrielle**
 
-An interesting article from [Le Figaro about the France 2030 plan](https://www.lefigaro.fr/conjoncture/emmanuel-macron-lance-un-vaste-plan-de-reconquete-industrielle-20211012) (for French audience).
+An interesting article from [Le Figaro about the France 2030 plan](https://www.lefigaro.fr/conjoncture/emmanuel-macron-lance-un-vaste-plan-de-reconquete-industrielle-20211012) (for French-speaking audience).
