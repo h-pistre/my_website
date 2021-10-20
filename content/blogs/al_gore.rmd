@@ -16,7 +16,7 @@ library("vembedr")
 ```
 
 
-**YouTube - Al Gore interview on "Earth in the Balance" (1992)**
+# YouTube - Al Gore interview on "Earth in the Balance" (1992)
 
 An interesting YouTube video about Al Gore's life-changing experience and his interest in fighting the climate change as soon as 1992, depicted in his book "Earth in the Balance" (1992).
 
