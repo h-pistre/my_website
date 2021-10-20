@@ -7,7 +7,7 @@ description: Emmanuel Macron lance un vaste plan de reconquête industrielle
 draft: false
 image: blog_2.jpg
 keywords: ""
-slug: magna
+slug: le_fig
 title: Le Figaro - Article
 ---
 

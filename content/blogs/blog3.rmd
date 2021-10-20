@@ -7,7 +7,7 @@ description: Al Gore interview on "Earth in the Balance" (1992)
 draft: false
 image: blog_3.jpg
 keywords: ""
-slug: magna
+slug: al_gore
 title: YouTube - Interview
 ---
 

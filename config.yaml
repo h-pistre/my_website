@@ -102,13 +102,17 @@ params:
         title: AirBnB prices study
         url: blogs/project_4b
       - image: blog_3.jpg
-        subtitle: Al Gore interview on "Earth in the Balance"
+        subtitle: Al Gore interview on "Earth in the Balance" (1992)
         title: YouTube - Interview
         url: blogs/al_gore
       - image: pic_project_5.jpg
         subtitle: Analysis of the returns of stocks traded on the New York Stock Exchange
         title: Returns of financial stocks analysis
         url: blogs/project_5
+      - image: blog_3.jpg
+        subtitle: Emmanuel Macron lance un vaste plan de reconquête industrielle
+        title: Le Figaro - Article
+        url: blogs/le_fig      
   two:
     buttonText: Go to Blogs
     enable: yes
