@@ -3,7 +3,7 @@ categories:
 - ""    #the front matter should be like the one found in, e.g., blog2.md. It cannot be like the normal Rmd we used
 - ""
 date: "2021-09-30"
-description: Returns of financial stocks analysis # the title that will show up once someone gets to this page
+description: Analysis of the returns of stocks traded on the New York Stock Exchange # the title that will show up once someone gets to this page
 draft: false
 image: pic_project_5.jpg # save picture in \static\img\blogs. Acceptable formats= jpg, jpeg, or png . Your iPhone pics wont work
 
@@ -17,8 +17,8 @@ title: Returns of financial stocks analysis
 <link href="/rmarkdown-libs/lightable/lightable.css" rel="stylesheet" />
 
 
-<div id="returns-of-financial-stocks" class="section level1">
-<h1>Returns of financial stocks</h1>
+<div id="analysis-of-the-returns-of-stocks-traded-on-the-new-york-stock-exchange" class="section level1">
+<h1>Analysis of the returns of stocks traded on the New York Stock Exchange</h1>
 <p>We start off by downloading stock data from the New York Stock Exchange:</p>
 <pre class="r"><code>nyse &lt;- read_csv(here::here(&quot;data&quot;,&quot;nyse.csv&quot;))</code></pre>
 <p>Then we create a table and a bar plot that shows the number of companies per sector, in descending order:</p>
