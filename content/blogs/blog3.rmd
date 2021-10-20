@@ -7,7 +7,7 @@ description: Steel will be vital to the green revolution, but our industry needs
 draft: false
 image: blog_4.jpg
 keywords: ""
-slug: le_fig
+slug: blog_4
 title: The Guardian - Article
 ---
 
