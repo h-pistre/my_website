@@ -6,4 +6,4 @@ slug: blogs
 title: Blog
 ---
 
-All my projects about R and interests about economics and politics.
+All the R projects on which I worked as well as content about my interests in economics and politics.
